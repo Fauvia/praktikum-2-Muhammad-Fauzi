@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+
+    <!-- Menu Navigasi -->
+    <table border="1" width="100%">
+        <tr align="center">
+            <td><a href="#">Home</a></td>
+            <td><a href="#">Generate Link</a></td>
+            <td><a href="#">Transaction History</a></td>
+            <td><a href="#">Policy</a></td>
+            <td><a href="#">Logout</a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form>
+        <table>
+            <tr>
+                <!-- Kolom kiri: gambar + tombol upload -->
+                <td valign="top">
+                    <img src="img/image.png" alt="Gambar Barang" width="200" height="150" border="1">
+                    <br><br>
+                    <input type="file" name="upload_picture">
+                </td>
+
+                <!-- Kolom kanan: isian form -->
+                <td valign="top">
+                    <table>
+                        <tr>
+                            <td>Title Here</td>
+                            <td>:</td>
+                            <td><input type="text" name="title" value="ASUS ROG Strix G16" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Description</td>
+                            <td valign="top">:</td>
+                            <td>
+                                <textarea name="description" rows="6" cols="40">Processor : Intel Core i7-13650HX
+GPU : NVIDIA GeForce RTX 4060 8GB
+RAM : 16GB DDR5
+Storage : 512GB SSD NVMe
+Layar : 16 inci 165Hz</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Account Number</td>
+                            <td>:</td>
+                            <td><input type="text" name="account_number" value="3382-7641" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Bank</td>
+                            <td>:</td>
+                            <td>
+                                <select name="bank">
+                                    <option value="BTN">BTN</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="BNI">BNI</option>
+                                    <option value="Mandiri">Mandiri</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Account Holder</td>
+                            <td>:</td>
+                            <td><input type="text" name="account_holder" value="Falisha" size="30"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Transaction</td>
+                            <td valign="top">:</td>
+                            <td>
+                                <select name="transaction">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <br>
+                                <input type="checkbox" name="send_phone" checked> Send to Mobile Phone
+                                <br>
+                                <input type="checkbox" name="send_email" checked> Send to Email
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Send to Mobile Phone</td>
+                            <td>:</td>
+                            <td><input type="text" name="mobile_phone" value="089636120298" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td>Send to Email</td>
+                            <td>:</td>
+                            <td><input type="text" name="email" value="fauziziizi@gmail.com" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td><button type="submit">Create payment link</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

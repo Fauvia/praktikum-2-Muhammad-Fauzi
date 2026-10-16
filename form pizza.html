@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+<body>
+    <h1>Form Pemesanan Pizza</h1>
+    <p>Silahkan isi form pemesanan ini dengan lengkap dan benar</p>
+
+    <form action="form pizza.html" method="post">
+        <fieldset>
+            <legend>Informasi Pemesanan</legend>
+            <p>
+                <label for="customername">Nama:</label>
+                <input type="text" id="customername" name="customername" required>
+            </p>
+            <p>
+                <label for="address">Alamat:</label>
+                <input type="text" id="address" name="address" required>
+            </p>
+            <p>
+                <label for="telephone">Telepon:</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="instruction">Instruksi pengantaran:</label><br>
+                <textarea
+                    id="instruction"
+                    name="instruction"
+                    rows="4"
+                    cols="50"
+                    maxlength="400"
+                    placeholder="maksimal 400 karakter"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Design your dream pizza</legend>
+
+            <p><strong>Pilih rasa</strong></p>
+            <p>Pilih salah satu</p>
+
+            <p>
+                <input type="radio" id="margherita" name="flavor" value="margherita" required>
+                <label for="margherita">Margherita</label>
+            </p>
+            <p>
+                <input type="radio" id="pepperoni" name="flavor" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+            </p>
+            <p>
+                <input type="radio" id="meatlovers" name="flavor" value="meat lovers">
+                <label for="meatlovers">Meat Lovers</label>
+            </p>
+            <p>
+                <input type="radio" id="bbqchicken" name="flavor" value="bbq chicken">
+                <label for="bbqchicken">BBQ Chicken</label>
+            </p>
+
+            <p><strong>Topping tambahan</strong></p>
+            <p>Boleh pilih lebih dari satu</p>
+
+            <p>
+                <input type="checkbox" id="extracheese" name="topping" value="extra keju">
+                <label for="extracheese">Extra keju</label>
+            </p>
+            <p>
+                <input type="checkbox" id="sausage" name="topping" value="sosis">
+                <label for="sausage">Sosis</label>
+            </p>
+            <p>
+                <input type="checkbox" id="olives" name="topping" value="zaitun">
+                <label for="olives">Zaitun</label>
+            </p>
+            <p>
+                <input type="checkbox" id="jalapeno" name="topping" value="jalapeno">
+                <label for="jalapeno">Jalapeño</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Pesan Sekarang</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>
